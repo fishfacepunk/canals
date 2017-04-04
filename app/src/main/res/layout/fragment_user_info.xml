@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.yusef.canals.LoginUtils.RegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="158dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_glass"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/register_firstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="First name"
+
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText" />
+
+            <EditText
+                android:id="@+id/register_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Last name"
+
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Date of birth"
+
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorText"
+                android:textColorHint="@color/colorText" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_weight="0.69">
+
+                <Button
+                    android:id="@+id/register_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/button_anims"
+                    android:onClick="createUser"
+                    android:text="Finish"
+                    android:textColor="@color/colorText" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

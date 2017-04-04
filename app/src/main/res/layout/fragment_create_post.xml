@@ -1,0 +1,72 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    tools:context="com.example.yusef.canals.MenuFragments.CreatePostFragment"
+    android:background="@drawable/shape_glass"
+    android:padding="10dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageButton5"
+            android:layout_alignBottom="@+id/imageButton5"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/camera_icon_52"
+                    android:id="@+id/imageButton5"
+                    android:scaleType="fitXY"
+                    android:background="@null"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="120dp" />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/post_title"
+                android:hint="Title"
+                android:textColorHint="@color/colorHintText"
+                android:textColor="@color/colorText" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/post_comment"
+                android:hint="What's on your mind?"
+                android:layout_alignParentStart="true"
+                android:textColorHint="@color/colorHintText"
+                android:textColor="@color/colorText" />
+
+            <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:id="@+id/upload_post"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_anims"
+                android:textColor="@color/colorText" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

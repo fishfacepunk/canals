@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.yusef.canals.CreatePost.WritePostFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_weight="0.13">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/camera_lens"
+                android:id="@+id/imageView3"
+                android:layout_weight="0.13"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Tilføj opslag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+                android:typeface="sans"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Titel..."
+            android:ems="10"
+            android:id="@+id/titleText"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/commentText"
+            android:hint="Sig mere..."
+            android:layout_weight="0.29" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_weight="0.01">
+
+            <TextView
+                android:text="Koordinater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/coordinatesText"
+                android:layout_weight="0.88" />
+
+            <Button
+                android:text="Hent koordinater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/get_coordinates"
+                android:background="@color/colorPrimary"
+                android:layout_weight="0.11"
+                style="@style/Widget.AppCompat.Button.Colored" />
+        </LinearLayout>
+
+        <Button
+            android:text="Slå op"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uploadPost"
+            android:background="@color/colorPrimary"
+            style="@style/Widget.AppCompat.Button.Colored" />
+
+    </LinearLayout>
+
+</FrameLayout>
