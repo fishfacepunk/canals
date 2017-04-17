@@ -2,69 +2,80 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="350dp"
     tools:context="com.example.yusef.canals.MenuFragments.CreatePostFragment"
-    android:background="@drawable/shape_glass"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:layout_height="450dp">
 
     <!-- TODO: Update blank fragment layout -->
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_margin="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/camera_icon_52"
+                android:id="@+id/imageButton5"
+                android:scaleType="fitXY"
+                android:layout_width="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:tint="@color/colorText" />
+
+        </RelativeLayout>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/imageButton5"
-            android:layout_alignBottom="@+id/imageButton5"
-            android:layout_alignParentTop="true">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:layout_height="120dp"
-                    app:srcCompat="@drawable/camera_icon_52"
-                    android:id="@+id/imageButton5"
-                    android:scaleType="fitXY"
-                    android:background="@null"
-                    android:layout_alignParentTop="true"
-                    android:layout_centerHorizontal="true"
-                    android:layout_width="120dp" />
-            </RelativeLayout>
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp">
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:ems="10"
                 android:id="@+id/post_title"
                 android:hint="Title"
                 android:textColorHint="@color/colorHintText"
-                android:textColor="@color/colorText" />
+                android:textColor="@color/colorText"
+                android:background="@drawable/shape_glass"
+                android:layout_above="@+id/post_comment"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0.20"
+                android:layout_height="40dp" />
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
                 android:inputType="textMultiLine"
                 android:ems="10"
                 android:id="@+id/post_comment"
                 android:hint="What's on your mind?"
-                android:layout_alignParentStart="true"
                 android:textColorHint="@color/colorHintText"
-                android:textColor="@color/colorText" />
+                android:textColor="@color/colorText"
+                android:background="@drawable/shape_glass"
+                android:layout_above="@+id/upload_post"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0.23"
+                android:layout_height="180dp" />
 
             <Button
                 android:text="Button"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:id="@+id/upload_post"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
                 android:background="@drawable/button_anims"
-                android:textColor="@color/colorText" />
+                android:textColor="@color/colorText"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true" />
 
         </LinearLayout>
 
