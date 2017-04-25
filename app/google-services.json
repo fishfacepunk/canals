@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:370506336046:android:cbfa3abd6c3135ab",
         "android_client_info": {
-          "package_name": "com.example.yusef.canals"
+          "package_name": "dk.dtu.yusef.canals"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "370506336046-vm053q4o0mgi2c7h2t50rji2loc29h5v.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.yusef.canals",
+            "package_name": "dk.dtu.yusef.canals",
             "certificate_hash": "250bd68c7a00a926a7a01bff8c397cfa9a9df934"
           }
         },
